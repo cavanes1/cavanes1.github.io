@@ -40,6 +40,29 @@
         max-height: 185px;
       }
     </style>
+    <style>
+      .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .social-icons a {
+        display: inline-block;
+      }
+
+      .social-icons img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        transition: transform 0.4s ease;
+      }
+
+      .social-icons a:hover img,
+      .social-icons a:focus-visible img {
+        transform: scale(1.3);
+      }
+    </style>
   </head>
 
   <body>
@@ -271,23 +294,36 @@
             >
           </div>
           <br />
-          <a href="https://www.linkedin.com/in/avanessian/" target="_blank"
-            ><img src="icons/linkedin.png" width="40" height="40"
-          /></a>
-          &nbsp;
-          <a href="https://orcid.org/0000-0002-2389-2801" target="_blank"
-            ><img src="icons/orcid.png" width="40" height="40"
-          /></a>
-          &nbsp;
-          <a
-            href="https://scholar.google.com/citations?user=qVZ_m4QAAAAJ&hl=en&oi=ao"
-            target="_blank"
-            ><img src="icons/gscholar.png" width="40" height="40"
-          /></a>
-          &nbsp;
-          <a href="https://github.com/cavanes1/" target="_blank"
-            ><img src="icons/github-mark.png" width="40" height="40" /></a
-          ><br /><br />
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/avanessian/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn">
+              <img src="icons/linkedin.png" alt="LinkedIn">
+            </a>
+
+            <a href="https://orcid.org/0000-0002-2389-2801"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="ORCiD">
+              <img src="icons/orcid.png" alt="ORCID">
+            </a>
+
+            <a href="https://scholar.google.com/citations?user=qVZ_m4QAAAAJ&hl=en&oi=ao"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Google Scholar">
+              <img src="icons/gscholar.png" alt="Google Scholar">
+            </a>
+
+            <a href="https://github.com/cavanes1/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="GitHub">
+              <img src="icons/github-mark.png" alt="GitHub">
+            </a>
+          </div>
+          <br />
           <p>
             <a
               style="color: #333; font-size: 20px"
